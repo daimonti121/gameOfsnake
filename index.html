@@ -111,12 +111,12 @@
 
         Snake.prototype.draw = function () {
             for (var i = 0; i < this.segments.length; i += 1) {
-                this.segments[i].drawSquare("yellow");
+                this.segments[i].drawSquare("#005690");
                 for (var j = 0; j < this.segments.length; j += 2) {
-                    this.segments[j].drawSquare("blue");
+                    this.segments[j].drawSquare("#ffcd7b");
                 }
             }
-            this.segments[0].drawSquare("green");
+            this.segments[0].drawSquare("#009d94");
         };
 
         Snake.prototype.move = function () {
